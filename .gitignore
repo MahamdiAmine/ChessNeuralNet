@@ -5,3 +5,4 @@ processed/
 __pycache__/
 idea/
 Neural*
+nets/value.pth
