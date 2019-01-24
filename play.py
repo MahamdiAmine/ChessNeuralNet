@@ -19,8 +19,6 @@ class Valuator(object):
         brd = s.serialize()[None]
         output = self.model(torch.tensor(brd).float())
         return float(output.data[0][0])
-
-
 def explore_leaves(s, v):
     ret = []
     for e in s.edges():
@@ -80,7 +78,7 @@ def move():
     if not s.board.is_game_over():
         move = request.args.get('move', default="")
         if move is not None and move != "":
-            print("human moves", move)
+            # print("human moves", move)
             try:
                 s.board.push_san(move)
                 computer_move()

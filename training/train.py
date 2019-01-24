@@ -90,19 +90,15 @@ if __name__ == "__main__":
       data, target = data.to(device), target.to(device)
       data = data.float()
       target = target.float()
-
       #print(data.shape, target.shape)
       optimizer.zero_grad()
       output = model(data)
       #print(output.shape)
-
       loss = floss(output, target)
       loss.backward()
       optimizer.step()
-      
       all_loss += loss.item()
       num_loss += 1
-
     print("%3d: %f" % (epoch, all_loss/num_loss))
     torch.save(model.state_dict(), "nets/value.pth")
 

@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 import os
-
 import chess.pgn
 import numpy as np
-
 from static.state import State
 
 
