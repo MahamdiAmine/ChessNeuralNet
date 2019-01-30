@@ -6,3 +6,10 @@ __pycache__/
 idea/
 Neural*
 nets/value.pth
+report/*.aux
+report/*.lof
+report/*.log
+report/*.out
+report/*.gz
+report/*.toc
+.~lock.N*
