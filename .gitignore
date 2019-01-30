@@ -3,7 +3,7 @@
 data/
 processed/
 __pycache__/
-.idea/*
+.idea/
 Neural*
 nets/value.pth
 report/*.aux
